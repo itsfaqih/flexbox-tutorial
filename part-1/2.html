@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Flexbox - Dasar Penggunaan Flexbox</title>
+</head>
+<body>
+  <a href="../index.html">Kembali ke Index</a>
+  <h1>Dasar Penggunaan Flexbox</h1>
+  <h3>Part 1 - Halaman 2 dari 2</h3>
+  <p>
+    Lalu, bagaimana cara kita bisa menempatkan elemen sesuai yang diinginkan?
+  </p>
+  <p>
+    Caranya adalah dengan memanfaatkan property-property CSS turunan dari flexbox.
+  </p>
+  <p>
+    Property yang sering digunakan adalah sebagai berikut:
+  </p>
+  <table border="1">
+    <tr>
+      <th>
+        Property
+      </th>
+      <th>
+        Value
+      </th>
+      <th>
+        Kegunaan
+      </th>
+    </tr>
+    <tr>
+      <td>
+        flex-direction
+      </td>
+      <td>
+        row | column | row-reverse | column-reverse
+      </td>
+      <td>
+        Menentukan sumbu peletakan elemen child (horizontal atau vertikal)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        justify-content
+      </td>
+      <td>
+        flex-start | flex-end | center | space-between | space-around ...
+      </td>
+      <td>
+        Menentukan <i>alignment</i> elemen child sesuai <b>sumbu yang diterapkan</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        align-items
+      </td>
+      <td>
+        flex-start | flex-end | center | stretch | baseline ...
+      </td>
+      <td>
+        Menentukan <i>alignment</i> elemen child sesuai <b>sumbu yang berseberangan dari yang diterapkan</b>
+      </td>
+    </tr>
+  </table>
+  <p>
+    Contoh:
+  </p>
+  <ol>
+    <li>
+      <p>flex-direction: row</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; flex-direction: row"&gt; 
+  &lt;div style="background: red"&gt;Elemen Anak&lt;/div&gt; 
+  &lt;span style="background: blue"&gt;Elemen Anak ke-2&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+      <p>
+        Hasil: (flex-direction: row menyebabkan peletakan elemen child menggunakan sumbu horizontal)
+      </p>
+      <div style="display: flex; flex-direction: row;">
+        <div style="background: red">Elemen Anak</div>
+        <span style="background: blue">Elemen Anak ke-2</span>
+      </div>
+    </li>
+    <li>
+      <p>flex-direction: column</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; flex-direction: column"&gt; 
+  &lt;div style="background: red"&gt;Elemen Anak&lt;/div&gt; 
+  &lt;span style="background: blue"&gt;Elemen Anak ke-2&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+      <p>
+        Hasil: (flex-direction: column menyebabkan peletakan elemen child menggunakan sumbu vertikal)
+      </p>
+      <div style="display: flex; flex-direction: column;">
+        <div style="background: red">Elemen Anak</div>
+        <span style="background: blue">Elemen Anak ke-2</span>
+      </div>
+    </li>
+    <li>
+      <p>justify-content: center</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; flex-direction: row; justify-content: center"&gt; 
+  &lt;div style="background: red"&gt;Elemen Anak&lt;/div&gt; 
+  &lt;span style="background: blue"&gt;Elemen Anak ke-2&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+      <p>
+        Hasil: (justify-content: center menyebabkan elemen child ke tengah dari sumbu yang diterapkan)
+      </p>
+      <div style="display: flex; flex-direction: row; justify-content: center">
+        <div style="background: red;">Elemen Anak</div>
+        <span style="background: blue">Elemen Anak ke-2</span>
+      </div>
+    </li>
+    <li>
+      <p>align-items: center</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; flex-direction: column; align-items: center"&gt; 
+  &lt;div style="background: red"&gt;Elemen Anak&lt;/div&gt; 
+  &lt;span style="background: blue"&gt;Elemen Anak ke-2&lt;/span&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+      <p>
+        Hasil: (align-items: center menyebabkan elemen child ke tengah dari sumbu yang berseberangan)
+      </p>
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <div style="background: red;">Elemen Anak</div>
+        <span style="background: blue">Elemen Anak ke-2</span>
+      </div>
+    </li>
+  </ol>
+  <p>
+    <a href="./1.html">Halaman sebelumnya</a>
+  </p>
+  <p>
+    <a href="../part-2/1.html">Part selanjutnya</a>
+  </p>
+</body>
+</html>

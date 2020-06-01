@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Flexbox - Pembuatan Layout Web</title>
+</head>
+<body>
+  <a href="../index.html">Kembali ke Index</a>
+  <h1>Pembuatan Layout Web</h1>
+  <h3>Part 4 - Halaman 1 dari 1</h3>
+  <h4>Landing Page Facebook (Kode lihat di source code langsung)</h4>
+  <div style="display: flex; flex-direction: column">
+    <div style="display: flex; justify-content: space-between; align-items: center; background: #29487d; color: white; padding: 0 20px">
+      <h2>Logo</h2>
+      <div style="display: flex; align-items: center">
+        <div style="display: flex; flex-direction: column; margin-right: 10px">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div style="display: flex; flex-direction: column; margin-right: 10px">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <button>Login</button>
+      </div>
+    </div>
+    <div style="display: flex">
+      <div style="display: flex; flex-direction: column; width: 50%">
+        <h3>
+          Facebook membantu Anda terhubung dan berbagi dengan orang-orang dalam kehidupan Anda.
+        </h3>
+        <img src="../no-image.svg" alt="no image" style="width: 100%; height: 300px; object-fit: cover;"/>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-start; width: 50%;">
+        <h2>Daftar</h2>
+        <h3>
+          Ini cepat dan mudah
+        </h3>
+        <div style="display: flex; width: 100%">
+          <input type="text" placeholder="Nama depan" style="width: 50%"/>
+          <input type="text" placeholder="Nama belakang" style="width: 50%"/>
+        </div>
+        <input type="text" placeholder="Nomor seluler atau email" style="width: 100%"/>
+        <input type="password" placeholder="Kata sandi baru" style="width: 100%"/>
+        <button>Daftar</button>
+      </div>
+    </div>
+  </div>
+  <p>
+    <a href="../part-3/3.html">Part sebelumnya</a>
+  </p>
+</body>
+</html>

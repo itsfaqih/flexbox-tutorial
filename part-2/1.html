@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Flexbox - Layouting Sederhana</title>
+</head>
+<body>
+  <a href="../index.html">Kembali ke Index</a>
+  <h1>Layouting Sederhana</h1>
+  <h3>Part 2 - Halaman 1 dari 1</h3>
+  <p>
+    Sekarang mari kita praktikan teori dasar tadi secara sederhana.
+  </p>
+  <p>
+    Misalnya membuat bendera:
+  </p>
+  <ul>
+    <li>
+      <p>Bendera Prancis</p>
+      <div style="display: flex; width: 150px; height: 100px; border: 1px solid black">
+        <div style="width: 50px; height: 100px; background: blue"></div>
+        <div style="width: 50px; height: 100px; background: white"></div>
+        <div style="width: 50px; height: 100px; background: red"></div>
+      </div>
+      <p>Kode:</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; width: 150px; height: 100px; border: 1px solid black"&gt; 
+  &lt;div style="width: 50px; height: 100px; background: blue"&gt;&lt;/div&gt;
+  &lt;div style="width: 50px; height: 100px; background: white"&gt;&lt;/div&gt;
+  &lt;div style="width: 50px; height: 100px; background: red"&gt;&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+    </li>
+    <li>
+      <p>Bendera Belanda</p>
+      <div style="display: flex; flex-direction: column-reverse; width: 150px; height: 100px; border: 1px solid black">
+        <div style="width: 150px; height: 33px; background: blue"></div>
+        <div style="width: 150px; height: 33px; background: white"></div>
+        <div style="width: 150px; height: 33px; background: red"></div>
+      </div>
+      <p>Kode:</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; flex-direction: column-reverse; width: 150px; height: 100px; border: 1px solid black"&gt; 
+  &lt;div style="width: 150px; height: 33px; background: blue"&gt;&lt;/div&gt;
+  &lt;div style="width: 150px; height: 33px; background: white"&gt;&lt;/div&gt;
+  &lt;div style="width: 150px; height: 33px; background: red"&gt;&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+    </li>
+    <li>
+      <p>Bendera Jepang</p>
+      <div style="display: flex; align-items: center; justify-content: center; width: 150px; height: 100px; border: 1px solid black">
+        <div style="width: 50px; height: 50px; background: red; border-radius: 50%;"></div>
+      </div>
+      <p>Kode:</p>
+      <code>
+        <pre>
+&lt;div style="display: flex; align-items: center; justify-content: center; width: 150px; height: 100px; border: 1px solid black"&gt; 
+  &lt;div style="width: 50px; height: 50px; background: red; border-radius: 50%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+      </code>
+    </li>
+  </ul>
+  <p>
+    Sangat mudah bukan? Untuk memastikan pemahaman, kalian bisa mencoba membuat bendera selain yang dicontohkan di atas.
+  </p>
+  <p>
+    <a href="../part-1/2.html">Part sebelumnya</a>
+  </p>
+  <p>
+    <a href="../part-3/1.html">Part selanjutnya</a>
+  </p>
+</body>
+</html>
